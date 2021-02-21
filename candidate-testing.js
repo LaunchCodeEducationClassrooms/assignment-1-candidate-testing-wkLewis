@@ -41,7 +41,7 @@ let totalGrade = 0;
 for (let i = 0; i < questions.length; i++) {
 
       if (correctAnswers[i].toLowerCase() === candidateAnswers[i].toLowerCase()) {
-        grade+=1;
+        grade++;
       }
   }
   totalGrade = (grade / questions.length) * 100;
