@@ -36,7 +36,7 @@ function gradeQuiz(candidateAnswers) {
   // TODO 1.2c: Let the candidate know if they have answered the question correctly or incorrectly // 
 
 let correctCount = 0;
-let grade = 0;
+let gradeQuiz = 0;
 
 for (let i = 0; i < questions.length; i++) {
 
@@ -44,15 +44,15 @@ for (let i = 0; i < questions.length; i++) {
         correctCount++;
       }
   }
-  grade = (correctCount / questions.length) * 100;
-  console.log(">>>> Overall Grade: " +`${grade}`+ "% " + `${correctCount} ` + "of " + `${questions.length}` + " responses correct) <<<<");
+  gradeQuiz = (correctCount / questions.length) * 100;
+  console.log(">>>> Overall Grade: " +`${gradeQuiz}`+ "% " + `${correctCount} ` + "of " + `${questions.length}` + " responses correct) <<<<");
 
-      if (grade >= 80) {
+      if (gradeQuiz >= 80) {
         console.log(">>> Status: PASSED <<<");
       } else {
         console.log(">>> Status: FAILED <<<");
       }
-
+return gradeQuiz;
 }
 
 
